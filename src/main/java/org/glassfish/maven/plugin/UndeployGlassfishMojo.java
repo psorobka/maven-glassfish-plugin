@@ -61,7 +61,6 @@ public class UndeployGlassfishMojo extends DeploymentGlassfishMojo {
 
     public void doExecute() throws MojoExecutionException, MojoFailureException {
         ProcessBuilder processBuilder = new ProcessBuilder();
-        if (domain.exists()) {
             boolean started = domain.isStarted();
             if (!started) {
                 getLog().info("Domain " + domain.getName() + " isn't started. Starting it for you.");
@@ -73,9 +72,6 @@ public class UndeployGlassfishMojo extends DeploymentGlassfishMojo {
             if (!started) {
                 new StopDomainCommand(this, domain).execute(processBuilder);
             }
-        } else {
-            throw new MojoFailureException("Domain " + domain.getName() + " does not exist.");
         }
-    }
 
 }
