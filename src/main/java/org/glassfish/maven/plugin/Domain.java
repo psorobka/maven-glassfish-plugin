@@ -116,6 +116,16 @@ public class Domain {
     @Parameter(description = "The admin password to use for this domain.")
     private String adminPassword;
 
+    @Parameter
+    private String target;
+
+    public String getTarget() {
+        return target;
+    }
+
+    public void setTarget(String target) {
+        this.target = target;
+    }       
 
     public String getName() {
         return name;
