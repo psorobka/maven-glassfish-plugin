@@ -38,7 +38,6 @@ package org.glassfish.maven.plugin;
 
 import au.net.ocean.maven.plugin.annotation.Mojo;
 import org.glassfish.maven.plugin.command.DeployCommand;
-import org.glassfish.maven.plugin.command.UndeployCommand;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 
@@ -58,7 +57,7 @@ public class RedeployGlassfishMojo extends DeploymentGlassfishMojo {
     public void doExecute() throws MojoExecutionException, MojoFailureException {
         ProcessBuilder processBuilder = new ProcessBuilder();
         for (Component component : getComponents()) {
-            new UndeployCommand(this, domain, component).execute(processBuilder);
+            setForce(true);
             new DeployCommand(this, domain, component).execute(processBuilder);
         }
     }
