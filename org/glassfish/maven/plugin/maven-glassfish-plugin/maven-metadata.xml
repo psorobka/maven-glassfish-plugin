@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.glassfish.maven.plugin</groupId>
+  <artifactId>maven-glassfish-plugin</artifactId>
+  <versioning>
+    <latest>2.2-SNAPSHOT</latest>
+    <versions>
+      <version>2.2-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20131006181943</lastUpdated>
+  </versioning>
+</metadata>
