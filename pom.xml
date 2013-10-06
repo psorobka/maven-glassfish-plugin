@@ -47,9 +47,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/psorobka/maven-glassfish-plugin.git</connection>
-        <url>scm:git:git://github.com/psorobka/maven-glassfish-plugin</url>
-        <developerConnection>scm:git:git://github.com/psorobka/maven-glassfish-plugin.git</developerConnection>
+        <connection>scm:git:https://github.com/psorobka/maven-glassfish-plugin.git</connection>
+        <url>scm:git:https://github.com/psorobka/maven-glassfish-plugin</url>
+        <developerConnection>scm:git:https://github.com/psorobka/maven-glassfish-plugin.git</developerConnection>
     </scm>
 
     <distributionManagement>
