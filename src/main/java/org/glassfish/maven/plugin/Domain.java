@@ -118,6 +118,17 @@ public class Domain {
 
     @Parameter
     private String target;
+    
+    @Parameter(defaultValue = "false")    
+    private boolean availabilityEnabled;
+
+    public boolean isAvailabilityEnabled() {
+        return availabilityEnabled;
+    }
+
+    public void setAvailabilityEnabled(boolean availabilityEnabled) {
+        this.availabilityEnabled = availabilityEnabled;
+    }
 
     public String getTarget() {
         return target;

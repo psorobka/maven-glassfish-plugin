@@ -85,6 +85,7 @@ public class DeployCommand extends InteractiveAsadminCommand {
                 "--upload=" + upload,
                 "--name", component.getName(),
                 "--force=" + force,
+                "--availabilityenabled", String.valueOf(domain.isAvailabilityEnabled()),
                 component.getArtifact().getAbsolutePath()
         ));
         return parameters;
